@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "dev2": "npm run build && npm run start",
     "start": "next start",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
