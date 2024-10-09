@@ -13,4 +13,4 @@ services:
         max_attempts: 2
     restart: on-failure
     ports:
-      - 9000:9000
+      - 3000:3000
