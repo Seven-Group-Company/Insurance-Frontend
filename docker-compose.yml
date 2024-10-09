@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: sgc_frontend
+    env_file: .env
+    deploy:
+      restart_policy:
+        condition: on-failure
+        max_attempts: 2
+    restart: on-failure
+    ports:
+      - 9000:9000
